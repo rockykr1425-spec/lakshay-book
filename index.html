@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lakshay Book - जानकारी और ग्राहक सहायता के लिए संपर्क करें।">
+  <meta name="theme-color" content="#101827">
+  <title>Lakshay Book | Customer Support</title>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W7ZVHKV4');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7ZVHKV4"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Lakshay Book home">
+      <span class="brand-mark">L</span><span>LAKSHAY <b>BOOK</b></span>
+    </a>
+    <a class="nav-cta" href="#contact">Contact support</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> CUSTOMER INFORMATION & SUPPORT</span>
+        <h1>Welcome to<br><span>Lakshay Book</span></h1>
+        <p class="lead">किसी भी जानकारी या सहायता के लिए हमारी टीम से संपर्क करें। हमारी Support Team आपकी सहायता के लिए उपलब्ध है।</p>
+        <div class="hero-actions">
+          <a class="button primary whatsapp-link" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" data-cta="hero_whatsapp">Chat on WhatsApp <span>↗</span></a>
+          <a class="button secondary" href="#about">Learn more</a>
+        </div>
+        <p class="small-note">कृपया किसी भी सेवा का उपयोग करने से पहले लागू नियमों और स्थानीय कानूनों की जाँच करें।</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="glass-card">
+          <div class="card-top"><span class="mini-mark">L</span><span class="live"><i></i> SUPPORT</span></div>
+          <div class="card-title">We're here<br>to help.</div>
+          <div class="card-line"></div><div class="card-line short"></div>
+          <div class="card-bottom"><span>LAKSHAY BOOK</span><span>24/7*</span></div>
+        </div>
+        <div class="float-chip">Quick assistance</div>
+      </div>
+    </section>
+
+    <section class="features" id="about">
+      <div class="section-heading"><span class="eyebrow">HOW WE CAN HELP</span><h2>Simple. Clear. Helpful.</h2><p>सही जानकारी पाने के लिए सीधे Support Team से बात करें।</p></div>
+      <div class="feature-grid">
+        <article class="feature"><div class="feature-icon">✦</div><h3>Customer Support</h3><p>अपने सवालों और सहायता के लिए हमारी टीम से संपर्क करें।</p></article>
+        <article class="feature"><div class="feature-icon">◷</div><h3>Timely Assistance</h3><p>हम आपकी query को जल्द से जल्द देखने का प्रयास करेंगे।</p></article>
+        <article class="feature"><div class="feature-icon">✓</div><h3>Clear Information</h3><p>किसी भी निर्णय से पहले नियम, शर्तें और जोखिम समझें।</p></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div><span class="eyebrow">NEED HELP?</span><h2>Let's talk.</h2><p>WhatsApp पर हमसे संपर्क करें।</p></div>
+      <a class="button primary whatsapp-link" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" data-cta="contact_whatsapp">Chat on WhatsApp <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Lakshay Book. All rights reserved.</span><span>*Support availability and response times may vary.</span></footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Sends a custom event to GTM whenever a WhatsApp CTA is clicked.
+    document.querySelectorAll('.whatsapp-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'whatsapp_click',
+          whatsapp_cta: link.getAttribute('data-cta') || 'unknown',
+          link_url: link.href
+        });
+      });
+    });
+  </script>
+</body>
+</html>
